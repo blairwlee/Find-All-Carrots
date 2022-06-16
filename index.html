@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrot Game 🥕</title>
+    <script type="module" src="./src/main.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./img/carrot_icon.ico" />
+  </head>
+  <body>
+    <h1>Find All Carrots!🥕</h1>
+    <section class="game">
+      <header class="game__header">
+        <button class="game__button">
+          <img class="game__button__img" src="./img/play-solid.png" />
+        </button>
+        <span class="game__timer visibility-hidden"></span>
+        <span class="game__score visibility-hidden"></span>
+      </header>
+      <div class="game__field"></div>
+    </section>
+    <section class="pop-up display-none">
+      <button class="pop-up__replay">
+        <img src="./img/rotate-right-solid.png" />
+      </button>
+      <span class="pop-up__text"></span>
+    </section>
+  </body>
+</html>

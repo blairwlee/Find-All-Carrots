@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #333;
+  font-family: 'Rubik', sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: whitesmoke;
+}
+
+img:not(.bug, .carrot) {
+  width: 36px;
+  height: 36px;
+}
+
+.game {
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 960px;
+  height: 540px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url('./img/background.png') center/cover;
+  border-radius: 1rem;
+}
+
+.game__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.game__button,
+.pop-up__replay {
+  margin: 0.5rem;
+  padding: 0;
+  width: 64px;
+  height: 64px;
+  color: #333;
+  background-color: whitesmoke;
+  border: 2px solid #333;
+  border-radius: 1rem;
+}
+
+.game__button {
+  background-color: #a1d571;
+}
+
+.game__button:hover {
+  background-color: #a1f571;
+}
+
+.button__replay:hover {
+  background-color: #ccc;
+}
+
+.game__timer {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: whitesmoke;
+  font-size: 20px;
+  border: 2px solid #333;
+  border-radius: 1rem;
+  user-select: none;
+}
+
+.game__score {
+  margin: 0.5rem;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  font-size: 24px;
+  color: whitesmoke;
+  background-color: #f38623;
+  border: 2px solid #333;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.game__field {
+  margin: 3rem 0 0 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bug {
+  z-index: 1;
+}
+
+.bug,
+.carrot {
+  position: absolute;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+}
+
+.bug:hover,
+.carrot:hover {
+  transform: scale(1.1);
+}
+
+.pop-up {
+  width: 40%;
+  height: 25%;
+  position: absolute;
+  left: 30%;
+  top: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: whitesmoke;
+  background-color: #00000060;
+  border-radius: 1rem;
+  z-index: 2;
+}
+
+.display-none {
+  display: none;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
